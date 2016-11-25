@@ -1,0 +1,4 @@
+behave>=1.2.5
+Flask>=0.11.1
+Flask-RESTful>=0.3.5
+pyOpenSSL>=16.0.0

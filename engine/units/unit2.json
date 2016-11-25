@@ -1,0 +1,25 @@
+{
+    "primitive": "block",
+    "properties": {
+        "name":  "test_unit_2",
+        "logic": "linear"
+    },
+    "primitives": [
+        {
+            "primitive": "static",
+            "properties": {
+                "name": "stat2",
+                "value": " static02 "
+            }
+        },
+        {
+            "primitive": "byte",
+            "properties": {
+                "name": "by01",
+                "value": 1,
+                "full_range": 0,
+                "format": "ascii"
+            }
+        }
+    ]
+}

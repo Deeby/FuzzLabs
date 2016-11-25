@@ -1,0 +1,25 @@
+{
+    "name": "Test Job",
+    "id": "deadbeef-dead-beef-deadc0de",
+    "session": {
+        "sleep_time": 0,
+        "skip": 0
+    },
+    "target": {
+        "transport": {
+            "media": "stderr"
+        }
+    },
+    "conditions": {
+        "fail_connection": ["handle"],
+        "fail_receive": ["pass"],
+        "fail_send": ["handle"]
+    },
+    "scenarios": [
+        {
+            "name": "test scenario",
+            "units": ["unit1", "unit3"]
+        }
+    ]
+}
+

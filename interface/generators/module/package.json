@@ -1,0 +1,16 @@
+{
+  "name": "generator-module",
+  "version": "1.0.0",
+  "description": "generator-module",
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Ádám Gólya",
+  "files": [
+    "app"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.17.3"
+  }
+}

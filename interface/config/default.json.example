@@ -1,0 +1,18 @@
+{
+  "env": "dev",
+  "db": {
+    "database": "dev",
+    "username": "test",
+    "password": "test",
+    "options": {
+      "host": "localhost",
+      "dialect": "mysql",
+      "pool": {
+        "max": 10,
+        "min": 0,
+        "idle": 600
+      },
+      "logging": false
+    }
+  }
+}

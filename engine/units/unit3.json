@@ -1,0 +1,47 @@
+{
+    "primitive": "block",
+    "properties": {
+        "name":  "test_unit_3",
+        "logic": "linear"
+    },
+    "primitives": [
+        {
+            "primitive": "byte",
+            "properties": {
+                "name": "byte_primitive_1",
+                "value": 1,
+                "full_range": 0,
+                "format": "ascii"
+            }
+        },
+        {
+            "primitive": "static",
+            "properties": {
+                "name": "static_primitive_3",
+                "value": " "
+            }
+        },
+        {
+            "primitive": "block",
+            "properties": {
+                "name":  "block_primitive_1",
+                "logic": "linear"
+            },
+            "primitives": [
+                {
+                    "primitive": "rand",
+                    "properties": {
+                        "name": "random_primitive_1",
+                        "value": "A",
+                        "min_length": 32,
+                        "max_length": 32,
+                        "min_value": 50,
+                        "max_value": 126,
+                        "format": "ascii"
+                    }
+                }
+
+            ]
+        }
+    ]
+}

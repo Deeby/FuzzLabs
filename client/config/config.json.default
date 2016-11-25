@@ -1,0 +1,14 @@
+{
+    "modules": {
+        "auto_load": 1,
+        "auto_activate": 0
+    }, 
+    "engines": {
+    },
+    "security": {
+        "ssl": {
+            "certificate_file": "client.crt",
+            "key_file": "client.key"
+        }
+    }
+}

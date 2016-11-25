@@ -1,0 +1,24 @@
+{
+    "primitive": "block",
+    "properties": {
+        "name": "test_unit_1",
+        "logic": "linear"
+    },
+    "primitives": [
+        {
+            "primitive": "string",
+            "properties": {
+                "name": "string_primtive_1",
+                "value": "test",
+                "ascii": 1,
+                "max_length": 256
+            }
+        },
+        {
+            "primitive": "include",
+            "properties": {
+                "unit": "unit2"
+            }
+        }
+    ]
+}

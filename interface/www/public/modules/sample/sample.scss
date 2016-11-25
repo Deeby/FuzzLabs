@@ -1,0 +1,53 @@
+#m-sample {
+    padding: 5px;
+}
+.logo {
+    margin-left: 10px;
+}
+.title {
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+md-toolbar {
+    background-color: #222222 !important;
+}
+md-toolbar._md-toolbar-transitions {
+    -webkit-transition-duration:.5s;
+    transition-duration:.5s;
+    -webkit-transition-timing-function:cubic-bezier(.35,0,.25,1);
+    transition-timing-function:cubic-bezier(.35,0,.25,1);
+    -webkit-transition-property:background-color,fill,color;
+    transition-property:background-color,fill,color
+}
+md-toolbar.md-whiteframe-z1-add,md-toolbar.md-whiteframe-z1-remove {
+    -webkit-transition:box-shadow .5s linear;
+    transition:box-shadow .5s linear
+}
+md-toolbar *,md-toolbar :after,md-toolbar :before {
+    box-sizing:border-box
+}
+md-toolbar.ng-animate {
+    -webkit-transition:none;
+    transition:none;
+}
+.work-area {
+    background-color: #EEEEEE;
+}
+.hex-value {
+    min-height: 2.1em;
+    min-width: 2.1em;
+    font-size: 1.4em;
+    border: 1px solid #AAAAAA;
+    cursor: pointer;
+    background-color: #FEFEFE;
+}
+.hex-value:hover {
+    background-color: #EEAAAA;
+}
+.selected {
+    background-color: #EEAAAA !important;
+}
+.drop-area {
+    font-size: 1.8em;
+}
+

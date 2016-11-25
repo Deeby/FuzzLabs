@@ -1,0 +1,12 @@
+[
+    {"/setup/acl": "ResourceInitAcl"},
+    {"/setup/ssl": "ResourceSetupSsl"},
+    {"/setup/apikey": "ResourceInitAPIKey"},
+    {"/management/ping": "ResourcePing"},
+    {"/management/shutdown": "ResourceShutdown"},
+    {"/management/remove": "ResourceRemove"},
+    {"/management/acl/list": "ResourceAclList"},
+    {"/management/acl/add": "ResourceAclAdd"},
+    {"/management/acl/remove": "ResourceAclRemove"},
+    {"/job": "ResourceListJobs"}
+]

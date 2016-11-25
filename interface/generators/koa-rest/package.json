@@ -1,0 +1,13 @@
+{
+  "name": "generator-rest",
+  "version": "1.0.0",
+  "description": "koa-rest",
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Ádám Gólya",
+  "dependencies": {
+    "yeoman-generator": "^0.17.3"
+  }
+}

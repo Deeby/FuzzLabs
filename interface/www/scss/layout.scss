@@ -1,0 +1,32 @@
+@import './_variables/general.scss';
+@import 'text';
+
+.box {
+    border: $primary-box-border $primary-box-border-style $primary-box-border-color;
+    border-radius: $primary-box-border-radius;
+}
+
+.box-padding {
+    padding: $primary-padding;
+}
+
+.box-margin {
+    margin: $primary-padding;
+}
+
+.message-box {
+    background-color: $message-box-color;
+    padding: $large-padding;
+    @include message-text-style;
+}
+
+.box-header {
+    min-height: $header-height;
+    background-position: center center;
+}
+#main-content,
+md-content,
+md-section {
+    background-color: transparent !important;
+}
+

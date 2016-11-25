@@ -1,0 +1,19 @@
+@import './_variables/general.scss';
+@import 'text.scss';
+
+body, html {
+    height:100%;
+    margin: 0;
+    @include primary-text-style;
+    background-color: #EEEEEE !important;
+}
+
+div,
+span {
+    text-decoration: none;
+    outline: 0;
+}
+
+#main-content {
+    height: 100%;
+}

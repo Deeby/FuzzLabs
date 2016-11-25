@@ -1,0 +1,3 @@
+class MutationsExhaustedException(Exception):
+    pass
+

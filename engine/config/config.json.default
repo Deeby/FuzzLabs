@@ -1,0 +1,1 @@
+{"security": {"ssl": 0}, "general": {"bind": "0.0.0.0", "port": 26000}}

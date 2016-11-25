@@ -1,0 +1,25 @@
+{
+    "name": "Commandline Test",
+    "id": "f00dbaad-dead-beef-baadf00d",
+    "session": {
+        "sleep_time": 0,
+        "skip": 0
+    },
+    "target": {
+        "transport": {
+            "media": "stdout"
+        }
+    },
+    "conditions": {
+        "fail_connection": ["pass"],
+        "fail_receive": ["pass"],
+        "fail_send": ["pass"]
+    },
+    "scenarios": [
+        {
+            "name": "commandline scenario",
+            "units": ["unit1"]
+        }
+    ]
+}
+

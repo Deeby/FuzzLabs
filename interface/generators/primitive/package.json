@@ -1,0 +1,16 @@
+{
+  "name": "generator-primitive",
+  "version": "1.0.0",
+  "description": "generator-primitive",
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Zsolt Imre",
+  "files": [
+    "app"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.17.3"
+  }
+}

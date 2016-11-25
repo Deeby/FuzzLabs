@@ -1,0 +1,21 @@
+@import './_variables/general.scss';
+
+@mixin clickable-style {
+    cursor: pointer;
+}
+
+@mixin clickable-hover-style {
+    color: $secondary-hover-font-color;
+}
+
+.clickable {
+    @include clickable-style;
+}
+
+.secondary-clickable {
+    @include clickable-style;
+}
+
+.secondary-clickable:hover {
+    @include clickable-hover-style;
+}
