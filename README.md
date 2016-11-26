@@ -40,5 +40,5 @@ FuzzLabs is made up of 4 components:
 
 ### Development
 
-This new version of FuzzLabs is currently work in progress but unfortunately this progress is very slow. If you are a developer familiar with JavaScript, AngularJS and NodeJS or, Python, or C/C++ and would like to join the project then you are more than welcome. Have a look at the code: if you can do better (not that difficult I guess)  then it is very likely you will be accepted as a collaborator. :) Otherwise, you can just sumit pull requests, record issues in the issue tracker or just leave a comment. Thank you.
+This new version of FuzzLabs is currently work in progress but unfortunately this progress is very slow. If you are a developer familiar with JavaScript, AngularJS and NodeJS or, Python, or C/C++ and would like to join the project then you are more than welcome. Have a look at the code: if you can do better (not that difficult I guess) then all will be good. :) Feel free sumit pull requests, record issues in the issue tracker or just leave a comment.
 
