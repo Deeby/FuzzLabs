@@ -63,7 +63,7 @@
             </md-card>
             <div ng-if="opened == false" layout="column" layout-align="center center" layout-fill class="drop-area">
                  <i class="material-icons" style="font-size: 150px; color: #AAAAAA;">cloud_upload</i>
-                 <div>Drag and drop a file to this area to open it.</div>
+                 <div style="color: #AAAAAA;">Drag and drop a file to this area to open it.</div>
             </div>
 
         </md-content>
