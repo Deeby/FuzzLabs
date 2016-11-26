@@ -13,6 +13,7 @@ designer.directive('buttonStatic', ['utilityService', 'selectionService', 'prope
 designer.directive('buttonString', ['utilityService', 'selectionService', 'propertiesService', buttonString]);
 designer.directive('buttonDelimiter', ['utilityService', 'selectionService', 'propertiesService', buttonDelimiter]);
 designer.directive('buttonBinary', ['utilityService', 'selectionService', 'propertiesService', buttonBinary]);
+designer.directive('primitiveBinary', ['utilityService', 'selectionService', 'propertiesService', itemBinary]);
 designer.directive('buttonHash', ['utilityService', 'selectionService', 'propertiesService', buttonHash]);
 designer.directive('buttonIncrement', ['utilityService', 'selectionService', 'propertiesService', buttonIncrement]);
 designer.directive('buttonPadding', ['utilityService', 'selectionService', 'propertiesService', buttonPadding]);
@@ -25,7 +26,7 @@ function sampleController($scope, utilityService, selectionService, propertiesSe
     $scope.reader = new FileReader();
 
     $scope.onPrimitiveServiceChange = function() {
-        console.log($scope.data);
+        // TODO: data changed
     }
 
     /* Converts the ArrayBuffer into an Array once

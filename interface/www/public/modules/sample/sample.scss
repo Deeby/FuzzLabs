@@ -48,6 +48,12 @@ md-toolbar.ng-animate {
     cursor: pointer;
     background-color: #FEFEFE;
 }
+.primitive-sign {
+    background-color: #FFFFFF;
+}
+.primitive-sign:hover {
+    background-color: #FFFFFF !important;
+}
 .hex-value:hover {
     background-color: #EEAAAA;
 }

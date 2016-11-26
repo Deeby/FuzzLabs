@@ -1,3 +1,22 @@
+var primitiveBase = function(parent, primitive, name, fuzzable, value) {
+    return {
+        "primitive": primitive,
+        "properties": {
+            "name": name,
+            "value": value,
+            "fuzzable": fuzzable,
+        },
+        "meta": {
+            "properties": {
+                "parent": parent
+            },
+            "getParent": function() {
+                return this.properties.parent;
+            }
+        }
+    };
+};
+
 app.factory('primitiveService', [
     function() {
         var observers = [];
@@ -10,11 +29,12 @@ app.factory('primitiveService', [
         }
 
         this.initRoot = function(value) {
-            // Clear selection service
             this.data.length = 0;
+            var d = [];
             for (var i = 0; i < value.length; i++) {
-                this.data.push(value[i]);
+                d.push(value[i]);
             }
+            this.data.push(new primitiveBase(this.data, "binary", "data", 0, d));
             notifyObservers();
         }
 
