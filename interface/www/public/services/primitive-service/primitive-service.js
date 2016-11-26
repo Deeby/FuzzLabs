@@ -10,6 +10,7 @@ app.factory('primitiveService', [
         }
 
         this.initRoot = function(value) {
+            // Clear selection service
             this.data.length = 0;
             for (var i = 0; i < value.length; i++) {
                 this.data.push(value[i]);

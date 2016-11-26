@@ -6,6 +6,30 @@
         </div>
     </md-toolbar>
 
+    <div>
+        <md-menu-bar>
+            <md-menu>
+                <button ng-click="$mdOpenMenu()">
+                    <md-icon md-font-icon="subject" style="color: #eeeeee">subject</md-icon>
+                    Unit
+                </button>
+                <md-menu-content>
+                    <md-menu-item>
+                        <md-button ng-click="close()">
+                            Close
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-divider></md-menu-divider>
+                    <md-menu-item>
+                        <md-button>
+                            Exit
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </md-menu-bar>
+    </div>
+
     <section layout="row" class="work-area">
 
         <md-sidenav 

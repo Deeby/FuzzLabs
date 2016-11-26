@@ -8,8 +8,15 @@
     font-size: 1.4em;
     color: #FFFFFF;
 }
-md-toolbar {
+md-menu-bar, md-toolbar {
     background-color: #222222 !important;
+}
+md-menu button,
+md-menu-bar {
+    color: #EEEEEE !important;
+}
+md-menu.md-open > button, md-menu > button:focus {
+    background-color: #555555 !important;
 }
 md-toolbar._md-toolbar-transitions {
     -webkit-transition-duration:.5s;

@@ -19,7 +19,7 @@ designer.directive('buttonPadding', ['utilityService', 'selectionService', 'prop
 designer.directive('buttonRandom', ['utilityService', 'selectionService', 'propertiesService', buttonRandom]);
 designer.directive('buttonSizer', ['utilityService', 'selectionService', 'propertiesService', buttonSizer]);
 
-function sampleController($scope, propertiesService, utilityService, selectionService, primitiveService) {
+function sampleController($scope, utilityService, selectionService, propertiesService, primitiveService) {
     $scope.data = primitiveService.data;
     $scope.opened = false;
     $scope.reader = new FileReader();
@@ -38,6 +38,7 @@ function sampleController($scope, propertiesService, utilityService, selectionSe
             0, 
             evt.target.result.byteLength
         ));
+        selectionService.resetSelection();
         primitiveService.initRoot(d);
         $scope.opened = true;
         $scope.$apply();
@@ -52,6 +53,12 @@ function sampleController($scope, propertiesService, utilityService, selectionSe
         $scope.reader.onloadend = $scope.onFileRead;
         $scope.reader.readAsArrayBuffer(files[0]);
     };
+
+    $scope.close = function() {
+        $scope.opened = false;
+        selectionService.resetSelection();
+        primitiveService.initRoot([]);
+    }
 
     primitiveService.registerObserver($scope.onPrimitiveServiceChange);
 

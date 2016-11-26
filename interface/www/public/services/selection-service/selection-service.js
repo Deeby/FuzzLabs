@@ -21,6 +21,12 @@ app.factory('selectionService', [
             "current_offset": -1
         };
 
+        this.resetSelection = function() {
+            this.setStartOffset(-1);
+            status.end = -1;
+            this.setActivePrimitive("", false);
+        }
+
         this.setActivePrimitive = function(name, value) {
             status.name = name;
             status.value = value;
