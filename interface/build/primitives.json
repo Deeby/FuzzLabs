@@ -1,0 +1,79 @@
+[
+    {
+        "primitive": "binary",
+        "color": {
+            "foreground": "#222222",
+            "background": "#F0F0F0"
+        }
+    },
+    {
+        "primitive": "block",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#222222"
+        }
+    },
+    {
+        "primitive": "numeric",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#9C27B0"
+        }
+    },
+    {
+        "primitive": "static",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#3F51B5"
+        }
+    },
+    {
+        "primitive": "string",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#F44336"
+        }
+    },
+    {
+        "primitive": "delimiter",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#2196F3"
+        }
+    },
+    {
+        "primitive": "hash",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#FF5722"
+        }
+    },
+    {
+        "primitive": "increment",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#795548"
+        }
+    },
+    {
+        "primitive": "padding",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#607D8B"
+        }
+    },
+    {
+        "primitive": "random",
+        "color": {
+            "foreground": "#222222",
+            "background": "#FFEB3B"
+        }
+    },
+    {
+        "primitive": "sizer",
+        "color": {
+            "foreground": "#EEEEEE",
+            "background": "#E91E63"
+        }
+    }
+]
