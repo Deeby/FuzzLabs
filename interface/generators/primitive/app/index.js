@@ -11,14 +11,14 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
     constructor: function () {
         yeoman.Base.apply(this, arguments);
         this.argument('name', { type: String, required: true });
-        this.argument('color', { type: String, required: true });
+        this.argument('bgcolor', { type: String, required: true });
+        this.argument('fgcolor', { type: String, required: true });
     },
 
     generateButtonDirective: function(){
         var context = {
             primitiveName: this.name,
-            primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveCapName: this.name.capitalizeFirst()
         };
         this.template("directive-button.js",
                       "www/public/primitives/"+this.name+"/directive-button-"+this.name+".js",
@@ -28,8 +28,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
     generateItemDirective: function(){
         var context = {
             primitiveName: this.name,
-            primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveCapName: this.name.capitalizeFirst()
         };
         this.template("directive-item.js",
                       "www/public/primitives/"+this.name+"/directive-item-"+this.name+".js",
@@ -39,8 +38,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
     generatePropertiesDirective: function(){
         var context = {
             primitiveName: this.name,
-            primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveCapName: this.name.capitalizeFirst()
         };
         this.template("directive-properties.js",
                       "www/public/primitives/"+this.name+"/directive-properties-"+this.name+".js",
@@ -51,7 +49,8 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
         var context = {
             primitiveName: this.name,
             primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveBgColor: this.bgcolor,
+            primitiveFgColor: this.fgcolor
         };
         this.template("primitive.scss",
                       "www/public/primitives/"+this.name+"/"+this.name+".scss",
@@ -61,8 +60,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
     generateButtonView: function(){
         var context = {
             primitiveName: this.name,
-            primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveCapName: this.name.capitalizeFirst()
         };
         this.template("view-button.html.tpl",
                       "www/public/primitives/"+this.name+"/view-button-"+this.name+".html.tpl",
@@ -72,8 +70,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
     generateItemView: function(){
         var context = {
             primitiveName: this.name,
-            primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveCapName: this.name.capitalizeFirst()
         };
         this.template("view-item.html.tpl",
                       "www/public/primitives/"+this.name+"/view-item-"+this.name+".html.tpl",
@@ -83,8 +80,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
     generatePropertiesView: function(){
         var context = {
             primitiveName: this.name,
-            primitiveCapName: this.name.capitalizeFirst(),
-            primitiveColor: this.color
+            primitiveCapName: this.name.capitalizeFirst()
         };
         this.template("view-properties.html.tpl",
                       "www/public/primitives/"+this.name+"/view-properties-"+this.name+".html.tpl",

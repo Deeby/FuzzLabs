@@ -1,4 +1,8 @@
 .color-primitive-<%= primitiveName %> {
-    color: #<%= primitiveColor %>;
+    color: <%= primitiveFgColor %>;
+    background-color: <%= primitiveBgColor %>;
 }
 
+.color-primitive-icon-<%= primitiveName %> {
+    color: <%= primitiveBgColor %>;
+}
