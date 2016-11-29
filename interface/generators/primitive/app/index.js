@@ -20,7 +20,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
             primitiveCapName: this.name.capitalizeFirst(),
             primitiveColor: this.color
         };
-        this.template("directive-button-primitive.js",
+        this.template("directive-button.js",
                       "www/public/primitives/"+this.name+"/directive-button-"+this.name+".js",
                       context);
     },
@@ -31,19 +31,19 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
             primitiveCapName: this.name.capitalizeFirst(),
             primitiveColor: this.color
         };
-        this.template("directive-item-primitive.js",
+        this.template("directive-item.js",
                       "www/public/primitives/"+this.name+"/directive-item-"+this.name+".js",
                       context);
     },
 
-    generateModel: function(){
+    generatePropertiesDirective: function(){
         var context = {
             primitiveName: this.name,
             primitiveCapName: this.name.capitalizeFirst(),
             primitiveColor: this.color
         };
-        this.template("model-primitive.js",
-                      "www/public/primitives/"+this.name+"/model-"+this.name+".js",
+        this.template("directive-properties.js",
+                      "www/public/primitives/"+this.name+"/directive-properties-"+this.name+".js",
                       context);
     },
 
@@ -64,7 +64,7 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
             primitiveCapName: this.name.capitalizeFirst(),
             primitiveColor: this.color
         };
-        this.template("view-button-primitive.html.tpl",
+        this.template("view-button.html.tpl",
                       "www/public/primitives/"+this.name+"/view-button-"+this.name+".html.tpl",
                       context);
     },
@@ -75,10 +75,22 @@ var PrimitiveGenerator = yeoman.generators.Base.extend({
             primitiveCapName: this.name.capitalizeFirst(),
             primitiveColor: this.color
         };
-        this.template("view-item-primitive.html.tpl",
+        this.template("view-item.html.tpl",
                       "www/public/primitives/"+this.name+"/view-item-"+this.name+".html.tpl",
                       context);
+    },
+
+    generatePropertiesView: function(){
+        var context = {
+            primitiveName: this.name,
+            primitiveCapName: this.name.capitalizeFirst(),
+            primitiveColor: this.color
+        };
+        this.template("view-properties.html.tpl",
+                      "www/public/primitives/"+this.name+"/view-properties-"+this.name+".html.tpl",
+                      context);
     }
+
 });
 
 module.exports = PrimitiveGenerator;

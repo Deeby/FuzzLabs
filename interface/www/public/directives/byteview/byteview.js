@@ -3,7 +3,8 @@ function byteView(utilityService, selectionService, propertiesService) {
         restrict: 'E',
         scope: {
             value: '=',
-            offset: '='
+            offset: '=',
+            bgcolor: '='
         },
         link: function(scope, element, attrs) {
 

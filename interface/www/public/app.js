@@ -1,4 +1,4 @@
-var dependencies = ['ngRoute', 'ngMaterial', 'ngFileUpload'];
+var dependencies = ['ngRoute', 'ngMaterial', 'ngFileUpload', 'angular-parallel'];
 var routes = [];
 var app = angular.module('testApp', dependencies);
 

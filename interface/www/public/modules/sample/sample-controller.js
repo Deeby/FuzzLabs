@@ -8,7 +8,11 @@ designer.controller('sampleController', sampleController);
 designer.directive('propertiesView', ['propertiesService', propertiesView]);
 designer.directive('byteView', ['utilityService', 'selectionService', 'propertiesService', byteView]);
 designer.directive('buttonBlock', ['utilityService', 'selectionService', 'propertiesService', buttonBlock]);
-designer.directive('buttonNumeric', ['utilityService', 'selectionService', 'propertiesService', buttonNumeric]);
+designer.directive('buttonNumeric', ['utilityService', 
+                                     'selectionService', 
+                                     'propertiesService', 
+                                     'primitiveService', 
+                                     buttonNumeric]);
 designer.directive('buttonStatic', ['utilityService', 'selectionService', 'propertiesService', buttonStatic]);
 designer.directive('buttonString', ['utilityService', 'selectionService', 'propertiesService', buttonString]);
 designer.directive('buttonDelimiter', ['utilityService', 'selectionService', 'propertiesService', buttonDelimiter]);

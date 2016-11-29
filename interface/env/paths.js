@@ -42,7 +42,9 @@ module.exports.paths = {
         public_path + 'bower_components/lodash/lodash.js',
         public_path + 'bower_components/moment/min/moment.js',
         public_path + 'bower_components/ng-file-upload/ng-file-upload-all.js',
-        public_path + 'dist/js/prod.js'
+        'bower_components/paralleljs/lib/parallel.js',
+        'bower_components/angular-parallel/index.js',
+        public_path + 'dist/js/prod.js',
     ],
     models: [
         databases_path + '/mysql/models/*.js'

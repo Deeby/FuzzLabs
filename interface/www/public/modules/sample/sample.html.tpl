@@ -62,17 +62,28 @@
                      a new primitive to be supported this list may have
                      to be updated too. -->
                 <div ng-repeat="primitive in data track by $index" layout="row" layout-wrap>
-                    <primitive-binary  ng-if="primitive.primitive == 'binary'"  value="primitive"></primitive-binary>
-                    <primitive-block   ng-if="primitive.primitive == 'block'"   value="primitive"></primitive-block>
-                    <primitive-numeric ng-if="primitive.primitive == 'numeric'" value="primitive"></primitive-numeric>
-                    <primitive-static  ng-if="primitive.primitive == 'static'"  value="primitive"></primitive-static>
-                    <primitive-string  ng-if="primitive.primitive == 'string'"  value="primitive"></primitive-string>
-                    <primitive-delimiter ng-if="primitive.primitive == 'delimiter'" value="primitive"></primitive-delimiter>
-                    <primitive-hash    ng-if="primitive.primitive == 'hash'"    value="primitive"></primitive-hash>
-                    <primitive-increment ng-if="primitive.primitive == 'increment'" value="primitive"></primitive-increment>
-                    <primitive-padding ng-if="primitive.primitive == 'padding'" value="primitive"></primitive-padding>
-                    <primitive-random  ng-if="primitive.primitive == 'random'"  value="primitive"></primitive-random>
-                    <primitive-sizer   ng-if="primitive.primitive == 'sizer'"   value="primitive"></primitive-sizer>
+                    <primitive-binary    ng-if="primitive.primitive == 'binary'"
+                                         value="primitive"></primitive-binary>
+                    <primitive-block     ng-if="primitive.primitive == 'block'"
+                                         value="primitive"></primitive-block>
+                    <primitive-numeric   ng-if="primitive.primitive == 'numeric'"
+                                         value="primitive"></primitive-numeric>
+                    <primitive-static    ng-if="primitive.primitive == 'static'"
+                                         value="primitive"></primitive-static>
+                    <primitive-string    ng-if="primitive.primitive == 'string'"
+                                         value="primitive"></primitive-string>
+                    <primitive-delimiter ng-if="primitive.primitive == 'delimiter'"
+                                         value="primitive"></primitive-delimiter>
+                    <primitive-hash      ng-if="primitive.primitive == 'hash'"
+                                         value="primitive"></primitive-hash>
+                    <primitive-increment ng-if="primitive.primitive == 'increment'"
+                                         value="primitive"></primitive-increment>
+                    <primitive-padding   ng-if="primitive.primitive == 'padding'"
+                                         value="primitive"></primitive-padding>
+                    <primitive-random    ng-if="primitive.primitive == 'random'"
+                                         value="primitive"></primitive-random>
+                    <primitive-sizer     ng-if="primitive.primitive == 'sizer'"
+                                         value="primitive"></primitive-sizer>
                 </div>
                 <!-- TODO: HERE TO RENDER -->
             </md-card>

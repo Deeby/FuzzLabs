@@ -17,7 +17,7 @@ var primitiveBase = function(parent, primitive, name, fuzzable, value) {
     };
 };
 
-app.factory('primitiveService', [
+app.factory('primitiveService', ['selectionService', 
     function() {
         var observers = [];
         this.data = [];
@@ -26,6 +26,13 @@ app.factory('primitiveService', [
             angular.forEach(observers, function(callback){
                 callback();
             });
+        }
+
+        /* This function to merge binary primitives next to
+           each other. This is because binary primitives form
+           a pool of parseable data. 
+        */
+        var mergeBinaryPrimitives = function() {
         }
 
         this.initRoot = function(value) {
@@ -43,6 +50,17 @@ app.factory('primitiveService', [
         }
 
         this.addPrimitive = function(parent, primitive) {
+            // TODO:
+            //   First we have to show properties form of the new
+            //   primitive region to be set up. Once that form is
+            //   saved we add the new primitive.
+            //   So, the input should be taken from the properties
+            //   service after all.
+            /*
+            this.parent.primitives.push(
+                new primitiveBase(parent, primitive, name, 0, value);
+            );
+            */
         }
 
         return this;
