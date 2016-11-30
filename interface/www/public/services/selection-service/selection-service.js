@@ -12,10 +12,7 @@ app.factory('selectionService', [
         //           shows the current location offset
 
         var status = {
-            "active_primitive": {
-                "name": "",
-                "value": false
-            },
+            "primitive": {},
             "start": -1,
             "end": -1,
             "current_offset": -1
@@ -27,9 +24,8 @@ app.factory('selectionService', [
             this.setActivePrimitive("", false);
         }
 
-        this.setActivePrimitive = function(name, value) {
-            status.name = name;
-            status.value = value;
+        this.setActivePrimitive = function(value) {
+            status.primitive = name;
             this.raiseSelectionChange();
         }
 

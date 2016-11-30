@@ -17,6 +17,8 @@
     <md-tab label="selection">
         <md-content class="md-padding">
             <div layout="column">
+                <h3>Primitive</h3>
+                <h3>Byte Value</h3>
                 <table>
                     <tr>
                         <td>Type:</td><td>{{item_type}}</td>
