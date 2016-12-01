@@ -4,6 +4,7 @@ function buttonNumeric(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
+            propertiesService.showPrimitiveProperties('numeric');
         }],
         templateUrl: '/primitives/numeric/view-button-numeric.html.tpl'
     };

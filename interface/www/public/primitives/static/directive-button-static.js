@@ -4,6 +4,7 @@ function buttonStatic(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
+            propertiesService.showPrimitiveProperties('static');
         }],
         templateUrl: '/primitives/static/view-button-static.html.tpl'
     };

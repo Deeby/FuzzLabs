@@ -44,6 +44,7 @@ module.exports.paths = {
         public_path + 'bower_components/ng-file-upload/ng-file-upload-all.js',
         'bower_components/paralleljs/lib/parallel.js',
         'bower_components/angular-parallel/index.js',
+        'bower_components/angular-uuid/uuid.js',
         public_path + 'dist/js/prod.js',
     ],
     models: [

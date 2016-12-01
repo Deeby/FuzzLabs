@@ -4,6 +4,7 @@ function buttonRandom(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
+            propertiesService.showPrimitiveProperties('random');
         }],
         templateUrl: '/primitives/random/view-button-random.html.tpl'
     };
