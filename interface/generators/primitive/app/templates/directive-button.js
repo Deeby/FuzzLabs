@@ -4,7 +4,11 @@ function button<%= primitiveCapName %>(utilityService, selectionService, propert
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
-            propertiesService.showPrimitiveProperties('<%= primitiveName %>');
+
+            $scope.createPrimitive = function(type) {
+                propertiesService.showPrimitiveProperties(type);
+            }
+
         }],
         templateUrl: '/primitives/<%= primitiveName %>/view-button-<%= primitiveName %>.html.tpl'
     };

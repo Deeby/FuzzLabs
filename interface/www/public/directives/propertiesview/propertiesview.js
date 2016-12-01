@@ -4,7 +4,7 @@ function propertiesView(propertiesService) {
         scope: {},
         controller: ['$scope', function($scope) {
 
-            $scope.showProperties = false;
+            $scope.showSelection = false;
             $scope.unit = {
                 "name": "",
                 "description": ""
@@ -18,7 +18,7 @@ function propertiesView(propertiesService) {
                 $scope.item_value = selection.item_value.value;
                 $scope.item_value_hex = selection.item_value.hex;
                 $scope.item_value_ascii = selection.item_value.ascii;
-                $scope.showProperties = true;
+                $scope.showSelection = true;
             }
 
             propertiesService.registerObserver(updateInterface);

@@ -14,9 +14,9 @@
             </div>
         </md-content>
     </md-tab>
-    <md-tab label="selection">
-        <md-content class="md-padding">
-            <div layout="column" ng-show="showProperties">
+    <md-tab label="selection" ng-show="showSelection">
+        <md-content class="md-padding" ng-show="showSelection">
+            <div layout="column">
                 <h3>Primitive</h3>
                 <table>
                     <tr>
