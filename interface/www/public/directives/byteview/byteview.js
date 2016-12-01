@@ -4,7 +4,9 @@ function byteView(utilityService, selectionService, propertiesService) {
         scope: {
             value: '=',
             offset: '=',
-            bgcolor: '='
+            bgcolor: '=',
+            fgcolor: '=',
+            parent: '='
         },
         link: function(scope, element, attrs) {
 

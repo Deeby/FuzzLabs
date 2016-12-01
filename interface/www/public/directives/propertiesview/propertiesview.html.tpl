@@ -16,8 +16,19 @@
     </md-tab>
     <md-tab label="selection">
         <md-content class="md-padding">
-            <div layout="column">
+            <div layout="column" ng-show="showProperties">
                 <h3>Primitive</h3>
+                <table>
+                    <tr>
+                        <td>Type:</td><td>{{primitive.primitive}}</td>
+                    </tr>
+                    <tr>
+                        <td>UUID:</td><td>{{primitive.meta.id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td><td>{{primitive.properties.name}}</td>
+                    </tr>
+                </table>
                 <h3>Byte Value</h3>
                 <table>
                     <tr>

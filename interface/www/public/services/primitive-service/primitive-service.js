@@ -1,30 +1,28 @@
 primitiveService.$inject = [
-    'utilityService',
-    'selectionService'
+    'utilityService'
 ]
 app.factory('primitiveService', primitiveService);
 
-var primitiveBase = function(parent, id, primitive, name, fuzzable, value) {
+var primitiveBaseBinary = function(name, value, fuzzable) {
     return {
-        "primitive": primitive,
-        "properties": {
-            "name": name,
-            "value": value,
-            "fuzzable": fuzzable,
-        },
+        "name": name,
+        "value": value,
+        "fuzzable": fuzzable
+    }
+}
+
+var primitiveBase = function(parent, id, type, primitive) {
+    return {
+        "primitive": type,
+        "properties": primitive,
         "meta": {
-            "properties": {
-                "id": id,
-                "parent": parent
-            },
-            "getParent": function() {
-                return this.properties.parent;
-            }
+            "id": id,
+            "parent": parent
         }
     };
 };
 
-function primitiveService(utilityService, selectionService) {
+function primitiveService(utilityService) {
     var observers = [];
     this.data = [];
 
@@ -51,9 +49,12 @@ function primitiveService(utilityService, selectionService) {
             this.data,
             utilityService.uuid(),
             "binary",
-            "data",
-            0,
-            d));
+            primitiveBaseBinary(
+                "pool",
+                d,
+                0
+            )
+        ));
         notifyObservers();
     }
 
@@ -62,23 +63,7 @@ function primitiveService(utilityService, selectionService) {
     }
 
     this.addPrimitive = function(parent, primitive) {
-        // TODO:
-        //   First we have to show properties form of the new
-        //   primitive region to be set up. Once that form is
-        //   saved we add the new primitive.
-        //   So, the input should be taken from the properties
-        //   service after all.
-        /*
-        this.parent.primitives.push(
-            new primitiveBase(
-                parent,
-                utilityService.uuid(),
-                primitive,
-                name,
-                0,
-                value);
-        );
-        */
     }
+
     return this;
 }

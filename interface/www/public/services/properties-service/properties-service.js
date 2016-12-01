@@ -5,29 +5,29 @@ propertiesService.$inject = [
 app.factory('propertiesService', propertiesService);
 
 function propertiesService(utilityService, selectionService) {
+    var observers = [];
     var data = {
         "selection": {
-        "primitive": "",
-        "item_type": "",
-        "item_offset": {
-            "value": 0,
-            "hex": ""
-        },
-        "item_value": {
-            "value": 0,
-            "hex": "",
-            "ascii": ""
-        }
+            "primitive": "",
+            "item_type": "",
+            "item_offset": {
+                "value": 0,
+                "hex": ""
+            },
+            "item_value": {
+                "value": 0,
+                "hex": "",
+                "ascii": ""
+            }
         }
     };
-    var observers = [];
 
-    this.showPrimitiveProperties = function(primitive_type) {
+    this.showPrimitiveProperties = function(type) {
     }
 
     var notifyObservers = function() {
-        angular.forEach(observers, function(callback){
-        callback();
+        angular.forEach(observers, function(callback) {
+            callback();
         });
     }
 
@@ -41,7 +41,8 @@ function propertiesService(utilityService, selectionService) {
 
     this.passItem = function(value) {
         if (value.type == "raw_byte") {
-        data.selection.item_type     = "Raw byte";
+        data.selection.item_type         = "Raw byte";
+        data.selection.primitive         = value.parent;
         data.selection.item_offset.value = value.offset;
         data.selection.item_value.value  = value.value;
         data.selection.item_offset.hex   = utilityService.toHex(value.offset, true);
