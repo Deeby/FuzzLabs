@@ -32,9 +32,6 @@
                 <h3>Byte Value</h3>
                 <table>
                     <tr>
-                        <td>Type:</td><td>{{item_type}}</td>
-                    </tr>
-                    <tr>
                         <td>Offset:</td><td>{{item_offset}} ({{item_offset_hex}})</td>
                     </tr>
                     <tr>

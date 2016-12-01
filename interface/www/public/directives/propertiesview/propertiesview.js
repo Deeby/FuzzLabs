@@ -13,7 +13,6 @@ function propertiesView(propertiesService) {
             var updateInterface = function() {
                 var selection = propertiesService.getSelection();
                 $scope.primitive = selection.primitive;
-                $scope.item_type = selection.item_type;
                 $scope.item_offset = selection.item_offset.value;
                 $scope.item_offset_hex = selection.item_offset.hex;
                 $scope.item_value = selection.item_value.value;

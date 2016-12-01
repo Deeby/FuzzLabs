@@ -41,17 +41,17 @@
                 <h1 class="md-toolbar-tools">Primitives</h1>
             </md-toolbar>
             <md-content layout="column">
+                <button-binary></button-binary>
                 <button-block></button-block>
                 <button-numeric></button-numeric>
-                <button-static></button-static>
                 <button-string></button-string>
                 <button-delimiter></button-delimiter>
-                <button-binary></button-binary>
-                <button-hash></button-hash>
-                <button-increment></button-increment>
                 <button-padding></button-padding>
                 <button-random></button-random>
                 <button-sizer></button-sizer>
+                <button-hash></button-hash>
+                <button-static></button-static>
+                <button-increment></button-increment>
             </md-content>
         </md-sidenav>
 

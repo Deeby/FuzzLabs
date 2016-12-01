@@ -40,7 +40,6 @@ function propertiesService(utilityService, selectionService) {
     }
 
     this.passItem = function(value) {
-        if (value.type == "raw_byte") {
         data.selection.item_type         = "Raw byte";
         data.selection.primitive         = value.parent;
         data.selection.item_offset.value = value.offset;
@@ -48,7 +47,6 @@ function propertiesService(utilityService, selectionService) {
         data.selection.item_offset.hex   = utilityService.toHex(value.offset, true);
         data.selection.item_value.hex    = utilityService.toHex(value.value, true);
         data.selection.item_value.ascii  = utilityService.toAscii(value.value);
-        }
         notifyObservers();
     };
     return this;

@@ -4,13 +4,11 @@ function byteView(utilityService, selectionService, propertiesService) {
         scope: {
             value: '=',
             offset: '=',
-            bgcolor: '=',
-            fgcolor: '=',
+            type: '=',
             parent: '='
         },
         link: function(scope, element, attrs) {
 
-            scope.type = "raw_byte";
             scope.selected = false;
 
             scope.onSelectionChange = function(status) {
