@@ -97,7 +97,8 @@
         <md-sidenav class="md-sidenav-right"
                     md-component-id="right"
                     md-is-locked-open="true"
-                    md-whiteframe="4">
+                    md-whiteframe="4"
+                    ng-show="opened">
             <md-toolbar>
                 <h1 class="md-toolbar-tools">Properties</h1>
             </md-toolbar>
@@ -106,5 +107,6 @@
                 <properties-view/>
             </md-content>
         </md-sidenav>
+
     </section>
 </div>

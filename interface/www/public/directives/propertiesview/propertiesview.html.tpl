@@ -14,16 +14,16 @@
             </div>
         </md-content>
     </md-tab>
-    <md-tab label="selection" ng-show="showSelection">
+    <md-tab label="selection">
         <md-content class="md-padding" ng-show="showSelection">
             <div layout="column">
+                <!-- TEST -->
+                <primitive-binary-properties></primitive-binary-properties>
+                <!-- TEST -->
                 <h3>Primitive</h3>
                 <table>
                     <tr>
                         <td>Type:</td><td>{{primitive.primitive}}</td>
-                    </tr>
-                    <tr>
-                        <td>UUID:</td><td>{{primitive.meta.id}}</td>
                     </tr>
                     <tr>
                         <td>Name:</td><td>{{primitive.properties.name}}</td>

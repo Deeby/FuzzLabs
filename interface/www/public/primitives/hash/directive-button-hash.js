@@ -4,7 +4,11 @@ function buttonHash(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
-            propertiesService.showPrimitiveProperties('hash');
+
+            $scope.createPrimitive = function(type) {
+                propertiesService.showPrimitiveProperties(type);
+            }
+
         }],
         templateUrl: '/primitives/hash/view-button-hash.html.tpl'
     };

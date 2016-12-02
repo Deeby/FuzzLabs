@@ -4,7 +4,11 @@ function buttonDelimiter(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
-            propertiesService.showPrimitiveProperties('delimiter');
+
+            $scope.createPrimitive = function(type) {
+                propertiesService.showPrimitiveProperties(type);
+            }
+
         }],
         templateUrl: '/primitives/delimiter/view-button-delimiter.html.tpl'
     };

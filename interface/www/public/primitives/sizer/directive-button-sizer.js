@@ -4,7 +4,11 @@ function buttonSizer(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
-            propertiesService.showPrimitiveProperties('sizer');
+
+            $scope.createPrimitive = function(type) {
+                propertiesService.showPrimitiveProperties(type);
+            }
+
         }],
         templateUrl: '/primitives/sizer/view-button-sizer.html.tpl'
     };

@@ -4,7 +4,11 @@ function buttonPadding(utilityService, selectionService, propertiesService) {
         link: function(scope, element, attrs) {
         },
         controller: ['$scope', function($scope) {
-            propertiesService.showPrimitiveProperties('padding');
+
+            $scope.createPrimitive = function(type) {
+                propertiesService.showPrimitiveProperties(type);
+            }
+
         }],
         templateUrl: '/primitives/padding/view-button-padding.html.tpl'
     };
